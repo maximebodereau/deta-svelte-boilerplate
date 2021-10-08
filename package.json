@@ -1,0 +1,40 @@
+{
+  "name": "prepstorant",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.8",
+    "@uppy/core": "^2.0.3",
+    "@uppy/dashboard": "^2.0.3",
+    "@uppy/file-input": "^2.0.2",
+    "@uppy/svelte": "^1.0.3",
+    "@uppy/xhr-upload": "^2.0.3",
+    "axios": "^0.21.4",
+    "deta": "^1.0.0",
+    "filepond": "^4.29.1",
+    "filepond-plugin-image-exif-orientation": "^1.0.11",
+    "filepond-plugin-image-preview": "^4.6.10",
+    "install": "^0.13.0",
+    "meteor-node-stubs": "^1.1.0",
+    "react-image-file-resizer": "^0.4.7",
+    "sharp": "^0.29.1",
+    "svelte": "^3.38.2",
+    "svelte-file-dropzone": "0.0.15",
+    "svelte-filepond": "^0.2.0",
+    "svelte-image-encoder": "^1.2.5",
+    "svelte-image-sharp": "0.0.3",
+    "uppload": "^3.2.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
